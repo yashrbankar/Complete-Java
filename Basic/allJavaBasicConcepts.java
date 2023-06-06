@@ -9,16 +9,14 @@ class allJavaBasicConcepts
         
         String str1=new String("this is printing");
         String str2="hello";
-        
         // f is reqired for litterals
         float a=2f;
-        // printing
-        
+        // printing;
         System.out.println(str1+str2+a);
+
         // it valid to take lower data types input using next in higher data types
-         
-         //taking input
-        //a=sc.nextInt();
+         //taking input this is valid
+        // a=sc.nextInt();
         
         /* error  trying to assign higher data type into small datatype
         int b=10l;
@@ -47,11 +45,15 @@ class allJavaBasicConcepts
         // type promotion (arthmetic operations)
         char x='a';
         char y='z';
-        
+
+        //! note that 
+        //! during math opertion 
+        //! char byte , float , short is promated into the int
+        //! int <long < double is converted according to precident
+
         // the type is promated into the higher datatypes
         System.out.println(y-x);
-        
-        // bool --> boolean
+        //! bool -> boolean
         boolean check =true;
         if(check) System.out.println("code tested");
         
@@ -72,7 +74,7 @@ class allJavaBasicConcepts
         int n=mat.length;
         int m=mat[0].length;
         
-        // String :
+        // !String :
         // Note that string in java are immutable 
         String palindrome="madam";
         int slength=palindrome.length();
