@@ -1,13 +1,17 @@
+import java.util.*;
 @SuppressWarnings("unchecked")
+
 class Data<t>
 {
     //! able to store the objects 
-    t A[]=(t[]) new Object[10];
+    t A2[]=(T[]) new Object();
+    //! also valid
+    ArrayList<t>A=new ArrayList<>(10);
 
     int length=0;
     void setData(t d)
     {
-        A[length]=d;
+        A.add(d);
         length++;
     }
     void display()

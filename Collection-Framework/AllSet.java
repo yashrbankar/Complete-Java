@@ -19,6 +19,7 @@ public class AllSet
         hs.add(5);
         hs.add(1);
         hs.add(100);
+        hs.remove(1);
 
         System.out.println("check present :"+hs.contains(1));
         

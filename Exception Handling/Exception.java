@@ -8,7 +8,7 @@ class Exception
         {
             System.out.println(a/b);
         }
-        catch (Exception e) {
+        catch (ArithmeticException e) {
             // TODO: handle exception
             System.out.println("b is not zero"+e);
         }

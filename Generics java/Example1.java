@@ -1,4 +1,3 @@
-package Generics;
 class Data<t>
 {
     private t data;
@@ -18,6 +17,9 @@ public class Example1
         Data<Integer> val=new Data<>(10);
         Integer number=val.getData();
         System.out.println(number);
+        Data<String> val2=new Data<>("hello");
+        String str=val2.getData();
+        System.out.println(str);
 
     }
 }
